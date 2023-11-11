@@ -10,6 +10,9 @@ const server = http.createServer((req,res)=>{
     if(req.url === '/faq'){
         res.end('here are frequently asked questions')
     }
+    if(req.url === '/packages'){
+        res.end('here is packages page')
+    }
     res.end(`
     <h1>Oops!</h1>
     <p>We can't seem to find the page you are looking for</p>
