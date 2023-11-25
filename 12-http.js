@@ -13,9 +13,6 @@ const server = http.createServer((req,res)=>{
     if(req.url === '/packages'){
         res.end('here is packages page')
     }
-    if(req.url === '/partners'){
-        res.end('here is the list of our partners')
-    }
     res.end(`
     <h1>Oops!</h1>
     <p>We can't seem to find the page you are looking for</p>
